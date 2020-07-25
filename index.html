@@ -8,110 +8,75 @@
   </head>
   <body>
     <div class="header">
-        
-        <div class="tg_page_head tg_head_wrap noselect clearfix">
-            <div class="tg_head_split">
-          
-              <div class="tg_head_logo_wrap">
-                <div class="tg_head_logo_dropdown dropdown" >
-                  <a class="tg_head_btn dropdown-toggle" >
-                    <div class="icon-hamburger-wrap">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </div><p  class="icon icon-tg-title"> Telegram</p>
-                  </a>
-          
-                  <!-- <ul class="dropdown-menu">
-                    <li><a ng-click="openGroup()">
-                      <i class="icon icon-new-group"></i><span my-i18n="im_new_group">Новая группа</span>
-                    </a></li>
-                    <li ng-if="!isEmpty.contacts"><a ng-click="openContacts()">
-                      <i class="icon icon-contacts"></i><span my-i18n="im_contacts">Контакты</span>
-                    </a></li>
-                    <li><a ng-click="openSettings()">
-                      <i class="icon icon-settings"></i><span my-i18n="im_settings">Настройки</span>
-                    </a></li>
-                    <li><a ng-click="openFaq()">
-                      <i class="icon icon-faq"></i><span my-i18n="head_telegram_faq">Вопросы и ответы о Telegram</span>
-                    </a></li>
-                    <li><a href="" ng-click="openChangelog()">
-                      <i class="icon icon-about"></i><span my-i18n="head_about">О приложении</span>
-                    </a></li>
-                  </ul> -->
+      <div class="tg_page_head tg_head_wrap noselect clearfix">
+        <div class="tg_head_split">
+          <div class="tg_head_logo_wrap">
+            <div class="tg_head_logo_dropdown dropdown">
+              <a class="tg_head_btn dropdown-toggle">
+                <div class="icon-hamburger-wrap">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
                 </div>
+                <p class="icon icon-tg-title">Telegram</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="tg_head_main_wrap">
+            <div class="tg_head_main_peer_wrap">
+              <div class="tg_head_peer_dropdown tg_head_peer_media_dropdown dropdown">
+                <a class="tg_head_btn dropdown-toggle">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
               </div>
-          
-              <div class="tg_head_main_wrap" >
-                <!---->
-          
-                <!----><!----><div  class="tg_head_main_peer_wrap" >
-          
-                  <div class="tg_head_peer_dropdown tg_head_peer_media_dropdown dropdown" >
-                    <a class="tg_head_btn dropdown-toggle" >
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </a>
-                    <!-- <ul class="dropdown-menu">
-                      <li><a ng-click="toggleEdit()" my-i18n="head_select_messages">Select messages</a></li>
-                      <li class="divider ng-scope"></li>
-                      <li><a ng-click="toggleMedia('photos')" my-i18n="head_media_photos">Фотографии</a></li>
-                      <li><a ng-click="toggleMedia('video')" my-i18n="head_media_video">Видео</a></li>
-                      <li><a ng-click="toggleMedia('documents')" my-i18n="head_media_documents">Файлы</a></li>
-                      <li><a ng-click="toggleMedia('music')" my-i18n="head_media_music">Audio</a></li>
-                      <li><a ng-click="toggleMedia('urls')" my-i18n="head_media_links">Shared links</a></li>
-                      <li><a ng-click="toggleMedia('audio')" my-i18n="head_media_audio">Голосовые сообщения</a></li>
-                      <li><a ng-click="toggleMedia('round')" my-i18n="head_media_round">Video messages</a></li>
-                      
-                      
-                    </ul> -->
+
+              <a class="tg_head_btn tg_head_peer_search_btn">
+                <i class="icon icon-search"></i>
+              </a>
+
+              <div class="tg_head_peer_title_wrap">
+                <a class="tg_head_btn">
+                  <div class="tg_head_peer_info">
+                    <span class="tg_head_peer_title">Telegram</span>
+                    <span>service notifications</span>
                   </div>
-          
-                  <a class="tg_head_btn tg_head_peer_search_btn" >
-                    <i class="icon icon-search"></i>
-                  </a>  
-          
-                  <div class="tg_head_peer_title_wrap" >
-                   
-          
-                    <!----><a class="tg_head_btn" >
-                      <div class="tg_head_peer_info">
-                        <span class="tg_head_peer_title" >Telegram</span>
-                        <!-- <span class="tg_head_peer_status"> -->
-                          <!----><span >service notifications</span><!---->
-                          <!---->
-                        <!-- </span> -->
-                      </div>
-                    </a><!---->
-          
-                  </div>
-          
-                </div><!----><!---->
+                </a>
               </div>
             </div>
           </div>
-        
-     
+        </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="left_container">
-          <div class="im_dialogs_panel">
+      <div class="left_container">
+        <div class="im_dialogs_panel">
           <div class="im_dialog_search"></div>
-          <input class="form-control im_dialogs_search_field no_outline " type="search" placeholder="Поиск">
+          <input
+            class="form-control im_dialogs_search_field no_outline"
+            type="search"
+            placeholder="Поиск"
+          />
         </div>
-        <div class="im_dialogs_col">
+        <div
+          class="im_dialogs_col nano nano_content"
+          style="height: calc(95vh - 95px);"
+        >
           <ul class="nav nav-pills nav-stacked">
             <li class="im_dialog_wrap">
               <a class="im_dialog">
                 <div class="im_dialog_mete pull_right text_right"></div>
                 <div class="im_dialog_photo pull_left peer_photo_init">
-                  <span class="peer_initials nocopy im_dialog_photo user_bgcolor_1"></span>
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
                 </div>
                 <div class="im_dialog_message_wrap">
                   <div class="im_dialog_peer">
-                    <span >FSD Frontend 2 step education</span>
+                    <span>FSD Frontend 2 step education</span>
                   </div>
                   <div class="im_dialog_message">
                     <span>Илья: </span>
@@ -122,15 +87,17 @@
             </li>
             <!--  -->
             <!--  -->
-            <li class="im_dialog_wrap">
-              <a class="im_dialog">
+            <li class="im_dialog_wrap" id="im_active">
+              <a class="im_dialog im_active">
                 <div class="im_dialog_mete pull_right text_right"></div>
                 <div class="im_dialog_photo pull_left peer_photo_init">
-                  <span class="peer_initials nocopy im_dialog_photo user_bgcolor_1"></span>
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
                 </div>
                 <div class="im_dialog_message_wrap">
                   <div class="im_dialog_peer">
-                    <span >Telegram</span>
+                    <span>Telegram</span>
                   </div>
                   <div class="im_dialog_message">
                     <span>Код подтверждения: </span>
@@ -139,18 +106,20 @@
                 </div>
               </a>
             </li>
-<!-- 
+            <!-- 
 
              -->
-             <li class="im_dialog_wrap">
+            <li class="im_dialog_wrap">
               <a class="im_dialog">
                 <div class="im_dialog_mete pull_right text_right"></div>
                 <div class="im_dialog_photo pull_left peer_photo_init">
-                  <span class="peer_initials nocopy im_dialog_photo user_bgcolor_1"></span>
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
                 </div>
                 <div class="im_dialog_message_wrap">
                   <div class="im_dialog_peer">
-                    <span >Алексей</span>
+                    <span>Алексей</span>
                   </div>
                   <div class="im_dialog_message">
                     <span>Вы: </span>
@@ -159,18 +128,20 @@
                 </div>
               </a>
             </li>
-<!--  -->
-<!--  -->
-<!--  -->
+            <!--  -->
+            <!--  -->
+            <!--  -->
             <li class="im_dialog_wrap">
               <a class="im_dialog">
                 <div class="im_dialog_mete pull_right text_right"></div>
                 <div class="im_dialog_photo pull_left peer_photo_init">
-                  <span class="peer_initials nocopy im_dialog_photo user_bgcolor_1"></span>
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
                 </div>
                 <div class="im_dialog_message_wrap">
                   <div class="im_dialog_peer">
-                    <span >Саша Дом</span>
+                    <span>Саша Дом</span>
                   </div>
                   <div class="im_dialog_message">
                     <span>joined </span>
@@ -179,18 +150,108 @@
                 </div>
               </a>
             </li>
-<!--  -->
-<!--  -->
-<!--  -->     
+            <!--  -->
+            <!--  -->
+            <!--  -->
             <li class="im_dialog_wrap">
               <a class="im_dialog">
                 <div class="im_dialog_mete pull_right text_right"></div>
                 <div class="im_dialog_photo pull_left peer_photo_init">
-                  <span class="peer_initials nocopy im_dialog_photo user_bgcolor_1"></span>
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
                 </div>
                 <div class="im_dialog_message_wrap">
                   <div class="im_dialog_peer">
-                    <span >Вадим</span>
+                    <span>Саша Дом</span>
+                  </div>
+                  <div class="im_dialog_message">
+                    <span>joined </span>
+                    <span>Telegram</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <li class="im_dialog_wrap">
+              <a class="im_dialog">
+                <div class="im_dialog_mete pull_right text_right"></div>
+                <div class="im_dialog_photo pull_left peer_photo_init">
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
+                </div>
+                <div class="im_dialog_message_wrap">
+                  <div class="im_dialog_peer">
+                    <span>Саша Дом</span>
+                  </div>
+                  <div class="im_dialog_message">
+                    <span>joined </span>
+                    <span>Telegram</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <li class="im_dialog_wrap">
+              <a class="im_dialog">
+                <div class="im_dialog_mete pull_right text_right"></div>
+                <div class="im_dialog_photo pull_left peer_photo_init">
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
+                </div>
+                <div class="im_dialog_message_wrap">
+                  <div class="im_dialog_peer">
+                    <span>Саша Дом</span>
+                  </div>
+                  <div class="im_dialog_message">
+                    <span>joined </span>
+                    <span>Telegram</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <li class="im_dialog_wrap">
+              <a class="im_dialog">
+                <div class="im_dialog_mete pull_right text_right"></div>
+                <div class="im_dialog_photo pull_left peer_photo_init">
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
+                </div>
+                <div class="im_dialog_message_wrap">
+                  <div class="im_dialog_peer">
+                    <span>Саша Дом</span>
+                  </div>
+                  <div class="im_dialog_message">
+                    <span>joined </span>
+                    <span>Telegram</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <!--  -->
+            <!--  -->
+            <!--  -->
+            <li class="im_dialog_wrap">
+              <a class="im_dialog">
+                <div class="im_dialog_mete pull_right text_right"></div>
+                <div class="im_dialog_photo pull_left peer_photo_init">
+                  <span class="peer_initials im_dialog_photo user_bgcolor_1">
+                    <p class="nocopy">sv</p>
+                  </span>
+                </div>
+                <div class="im_dialog_message_wrap">
+                  <div class="im_dialog_peer">
+                    <span>Вадим</span>
                   </div>
                   <div class="im_dialog_message">
                     <span>joined: </span>
@@ -198,16 +259,104 @@
                   </div>
                 </div>
               </a>
-            </li>      
-            
+            </li>
           </ul>
-          <div class="nano-pane" style="display: block;">
-            <div class="nano-slider" style="height: 91px; transform: translate(0px, 203px);">
+          <!-- <div class="nano-pane" style="display: block;">
+            <div class="nano-slider" style="height: 79px; transform: translate(0px, 195px);">
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="im_history_col_wrap">
+        <div
+          class="im_history_message_wrap im_service_message"
+          style="height: calc(80vh - 74px);"
+        >
+          <div class="im_message_date_split im_service_message_wrap">
+            <span class="im_message_date_split_text"
+              >суббота, 17 июля 2020 г.</span
+            >
+          </div>
+          <div class="im_message_outer_wrap hasselect">
+            <div class="im_message_wrap">
+              <div class="im_content_message">
+                <div class="im_send_initial_photo im_message_from_photo">
+                  <div class="im_dialog_photo small">
+                    <span class="peer_initials user_bgcolor_1">
+                      <a class="nocopy small">sv</a>
+                    </span>
+                  </div>
+                </div>
+                <div class="im_message_body">
+                  <a class="im_message_author"> Telegram </a>
+                  <div class="im_message_text" dir="auto">
+                    <strong>Код подтверждения:</strong> 83513. Никому не давайте
+                    код, даже если его требуют от имени Telegram!
+                    <br /><br />Этот код используется для входа в Ваш аккаунт в
+                    Telegram. Он никогда не нужен для чего-то еще
+                    <br /><br />Если Вы не запрашивали код для входа,
+                    проигнорируйте это сообщение.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="im_bottom_panel_wrap">
+          <div class="im_send_panel_wrap">
+            <div class="im_send_form_wrap1">
+              <div class="im_send_initial_photo">
+                <div class="im_dialog_photo">
+                  <span class="peer_initials user_bgcolor_1">
+                    <a class="nocopy">al</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="im_send_dialog_photo">
+                <div class="im_dialog_photo">
+                  <span class="peer_initials user_bgcolor_1">
+                    <a class="nocopy">sv</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="im_send_form">
+                <div class="im_send_field_wrap hasselect">
+                  <a class="composer_emoji_insert_btn">
+                    <i class="icon icon-emoji"> </i>
+                  </a>
+                  <div
+                    class="composer_rich_textarea"
+                    contenteditable="true"
+                    dir="auto"
+                    style="
+                      left: -17px;
+                      width: calc(100% + 34px);
+                      padding-left: 19px;
+                      padding-right: 45px;
+                    "
+                    placeholder=" Напишите сообщение..."
+                  ></div>
+                </div>
+
+                <div class="im_send_buttons">
+                  <button
+                    type="submit"
+                    class="btn btn-md im_submit im_submit_send"
+                  >
+                    <span class="im_submit_send_label nocopy">Отправить</span>
+                    <span
+                      class="im_submit_edit_label nocopy"
+                      data-content="Save"
+                    ></span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <p>container</p>
     </div>
     <div id="footer"></div>
   </body>
